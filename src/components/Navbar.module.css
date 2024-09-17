@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #ffcb30;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.navbar h1 {
+    font-size: x-large;
+}
+
+.navbar a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
