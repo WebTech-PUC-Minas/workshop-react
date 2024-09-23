@@ -1,9 +1,14 @@
 import Card from "../components/Card";
 
 function React() {
-    return ( 
-        <Card/>
-     );
+  return (
+    <container className="container">
+      <Card />
+      <Card />
+      <Card />
+    <Card />
+    </container>
+  );
 }
 
 export default React;

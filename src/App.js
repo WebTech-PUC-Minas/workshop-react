@@ -9,12 +9,10 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div>
         <Routes>
           <Route exact path="/" Component={React} />
           <Route exact path="/next" Component={Next} />
         </Routes>
-      </div>
     </Router>
   );
 }

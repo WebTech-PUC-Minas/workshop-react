@@ -1,37 +1,63 @@
 .card {
-    width: 240px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card figure {
-    margin: 0;
-  }
-  
-  .card img {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #33333340;
+}
+
+@media (max-width: 576px) {
+  .card {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+    margin-bottom: 2rem;
   }
-  
-  .card h1 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 15px 20px 10px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    color: #666;
-    margin: 10px 20px 20px;
-    line-height: 1.5;
-  }
-  
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card article {
+  margin: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0rem;
+}
+
+.card div time {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.card article div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
