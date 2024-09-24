@@ -1,4 +1,3 @@
-import { useState } from "react";
 import style from "./Card.module.css";
 
 function Card({ banner, title, date }) {
@@ -17,9 +16,9 @@ function Card({ banner, title, date }) {
         <div>
           <time>{date}</time>
           {show ? (
-            <img className={style.icon} src="icons/heart-solid.svg" onClick={handleClick}/>
+            <img className={style.icon} src="icons/heart-solid.svg" onClick={handleClick} />
           ) : (
-            <img className={style.icon} src="icons/heart-regular.svg" onClick={handleClick}/>
+            <img className={style.icon} src="icons/heart-regular.svg" onClick={handleClick} />
           )}
         </div>
       </article>
@@ -28,3 +27,11 @@ function Card({ banner, title, date }) {
 }
 
 export default Card;
+
+{
+  show ? (
+    <img className={style.icon} src="icons/heart-solid.svg" onClick={handleClick} />
+  ) : (
+    <img className={style.icon} src="icons/heart-regular.svg" onClick={handleClick} />
+  );
+}
